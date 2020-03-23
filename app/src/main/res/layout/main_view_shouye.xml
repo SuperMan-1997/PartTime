@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include layout="@layout/main_title_bar"/>
+    <include layout="@layout/main_adbanner"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#E3E3E3"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/r1_sousuo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_sousuo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_sousuo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:autoLink="web"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="https://www.baidu.com"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_sousuo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/white"
+                android:src="@drawable/sousuo" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r1_cade"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_cade"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="名片"
+                android:textColor="#666666"
+                android:textSize="16sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:id="@+id/iv_cade"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_above="@+id/tv_cade"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/cade"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r1_sao"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_sao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="扫一扫"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/iv_sao"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_above="@+id/tv_sao"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/sao"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r1_gengduo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_gengduo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="更多"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/iv_gengduo"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_above="@+id/tv_gengduo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/gengduo"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#E3E3E3"/>
+    <LinearLayout
+        android:id="@+id/ll_shouye"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:background="#F7F8F8"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ListView
+            android:id="@+id/lv_shouye_jianzhi"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#E4E4E4"
+            android:dividerHeight="1dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--自定义适配器所嵌入的布局文件-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#FFFFCC"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty"
+            android:autoLink="web"
+            android:text="武当国际大酒店"
+            android:autoText="true"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/company_addr"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginTop="3dp"
+            android:autoLink="phone"
+            android:text="朝阳路38号"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/company_juli"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty"
+            android:text="50km"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/company_phone"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:autoLink="phone"
+                android:text="18154394149"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+
+                android:id="@+id/tv_quanzhi"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:text="全职"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_below="@+id/company_phone"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/jop_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019/06/18 12:00-15:00"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_weight="1.07"
+                android:layout_marginRight="11dp"
+                android:layout_alignTop="@+id/tv_quanzhi"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
